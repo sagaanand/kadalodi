@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#0B1E36"/>
+  <!-- Ocean Waves -->
+  <path d="M4 22C7 20 10 24 13 22C16 20 19 24 22 22C25 20 28 24 30 22" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  <path d="M4 25C7 23 10 27 13 25C16 23 19 27 22 25C25 23 28 27 30 25" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Cargo Ship Silhouette -->
+  <path d="M7 16L10 19H22L25 16H7Z" fill="#38BDF8"/>
+  <rect x="11" y="12" width="4" height="4" rx="0.5" fill="#F8FAFC"/>
+  <rect x="16" y="10" width="5" height="6" rx="0.5" fill="#F8FAFC"/>
+  <rect x="18" y="7" width="2" height="3" fill="#F43F5E"/>
+</svg>
