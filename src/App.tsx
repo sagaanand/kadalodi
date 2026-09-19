@@ -4,7 +4,6 @@ import { AppProvider, useApp } from './context/AppContext';
 
 // Shared overlays & auth
 import { GlobalSearchModal } from './components/common/GlobalSearchModal';
-import { WhatsAppConcierge } from './components/common/WhatsAppConcierge';
 import { CartDrawer } from './components/customer/CartDrawer';
 import { LoginPage } from './pages/LoginPage';
 

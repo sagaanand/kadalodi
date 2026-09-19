@@ -8,7 +8,6 @@ import {
 import { useApp } from '../../context/AppContext';
 import { NotificationCenter } from '../common/NotificationCenter';
 import { CartDrawer } from '../customer/CartDrawer';
-import { WhatsAppConcierge } from '../common/WhatsAppConcierge';
 
 interface BottomTab {
   label: string;
@@ -287,10 +286,8 @@ export const CustomerLayout: React.FC<{ children: React.ReactNode }> = ({ childr
 
       {/* Notifications */}
       <NotificationCenter isOpen={isNotifOpen} onClose={() => setIsNotifOpen(false)} />
-
-      {/* Cart & WhatsApp */}
+      {/* Cart Drawer */}
       <CartDrawer />
-      <WhatsAppConcierge />
     </div>
   );
 };
