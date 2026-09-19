@@ -108,7 +108,7 @@ export const MOCK_CUSTOMS: CustomsDeclaration[] = [
     category: 'Fresh Agricultural Produce',
     declaredValueMvr: 482,
     dutyFeeMvr: 0,
-    documentsStatus: 'Submitted',
+    documentsStatus: 'Documentation Pending',
     status: 'Under Review',
     submittedAt: '25 Sep 2026',
     inspectorNote: 'Documents submitted. Phytosanitary review in progress at APHA desk.'
