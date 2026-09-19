@@ -16,6 +16,20 @@ export const MOCK_CUSTOMS: CustomsDeclaration[] = [
     inspectorNote: 'APHA phytosanitary certificate verified. Fresh produce — duty exempt under SAFTA.'
   },
   {
+    id: 'CUS-DEC-2026-9850',
+    shipmentId: 'KDL-EXP-023',
+    orderId: 'KD-10296',
+    customerName: 'Ahmed Hassan',
+    productDescription: 'Coconut (12 pcs), Curry Leaves (1kg), Mint Leaves (1.5kg)',
+    category: 'Fresh Agricultural Produce',
+    declaredValueMvr: 372,
+    dutyFeeMvr: 0,
+    documentsStatus: 'Verified',
+    status: 'Under Review',
+    submittedAt: '21 Sep 2026',
+    inspectorNote: 'Phytosanitary certificate received. Cold-chain verification pending for fresh produce.'
+  },
+  {
     id: 'CUS-DEC-2026-9811',
     shipmentId: 'KDL-EXP-023',
     orderId: 'KD-10287',
@@ -44,6 +58,34 @@ export const MOCK_CUSTOMS: CustomsDeclaration[] = [
     inspectorNote: 'Rice subject to 5% import duty. Paid. Fresh produce duty-exempt. Cleared for release.'
   },
   {
+    id: 'CUS-DEC-2026-9701',
+    shipmentId: 'KDL-EXP-022',
+    orderId: 'KD-10289',
+    customerName: 'Fathimath Rishfa',
+    productDescription: 'Small Onion (10kg), Cucumber (5kg), Ginger (4kg)',
+    category: 'Fresh Agricultural Produce',
+    declaredValueMvr: 290,
+    dutyFeeMvr: 0,
+    documentsStatus: 'Verified',
+    status: 'Cleared',
+    submittedAt: '17 Sep 2026',
+    inspectorNote: 'All fresh produce — duty exempt. Phytosanitary certificate from FSSAI verified. Cleared.'
+  },
+  {
+    id: 'CUS-DEC-2026-9602',
+    shipmentId: 'KDL-EXP-021',
+    orderId: 'KD-10290',
+    customerName: 'Hassan Nazim',
+    productDescription: 'Coconut (60 pcs), Coriander (3kg), Curry Leaves (3kg)',
+    category: 'Fresh Agricultural Produce',
+    declaredValueMvr: 697,
+    dutyFeeMvr: 0,
+    documentsStatus: 'Verified',
+    status: 'Cleared',
+    submittedAt: '15 Sep 2026',
+    inspectorNote: 'All items duty-exempt. SAFTA fresh produce exemption applied. Cleared on first pass.'
+  },
+  {
     id: 'CUS-DEC-2026-9930',
     shipmentId: 'KDL-EXP-025',
     orderId: 'KD-10291',
@@ -56,5 +98,33 @@ export const MOCK_CUSTOMS: CustomsDeclaration[] = [
     status: 'Documentation Pending',
     submittedAt: '28 Sep 2026',
     inspectorNote: 'FSSAI export certificate required for bulk rice. Kadalodi India team notified.'
+  },
+  {
+    id: 'CUS-DEC-2026-9940',
+    shipmentId: 'KDL-EXP-025',
+    orderId: 'KD-10295',
+    customerName: 'Rugiyya Naeem',
+    productDescription: 'Small Onion (15kg), Cucumber (10kg), Mint Leaves (1kg)',
+    category: 'Fresh Agricultural Produce',
+    declaredValueMvr: 482,
+    dutyFeeMvr: 0,
+    documentsStatus: 'Submitted',
+    status: 'Under Review',
+    submittedAt: '25 Sep 2026',
+    inspectorNote: 'Documents submitted. Phytosanitary review in progress at APHA desk.'
+  },
+  {
+    id: 'CUS-DEC-2026-9511',
+    shipmentId: 'KDL-EXP-021',
+    orderId: 'KD-10280',
+    customerName: 'Hawwa Sana',
+    productDescription: 'Small Onion (10kg), Coriander Leaves (3kg)',
+    category: 'Fresh Agricultural Produce',
+    declaredValueMvr: 274,
+    dutyFeeMvr: 0,
+    documentsStatus: 'Verified',
+    status: 'Cleared',
+    submittedAt: '13 Sep 2026',
+    inspectorNote: 'Standard fresh produce. SAFTA duty exemption. Cleared.'
   }
 ];

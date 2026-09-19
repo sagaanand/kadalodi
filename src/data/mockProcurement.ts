@@ -29,6 +29,19 @@ export const MOCK_PROCUREMENT: ProcurementRecord[] = [
   },
   {
     id: 'PROC-903',
+    orderId: 'KD-10284',
+    productId: 'prod-10',
+    productTitle: 'Coriander Leaves (Kothamalli) — 1 kg Bundle',
+    supplier: 'Tiruvallur Herb Farmers Direct',
+    originCity: 'Tiruvallur, Tamil Nadu',
+    inrCost: 120,
+    quantity: 2,
+    status: 'Ready',
+    expectedDate: '19 Sep 2026',
+    verifiedBy: 'Anbu Selvan'
+  },
+  {
+    id: 'PROC-904',
     orderId: 'KD-10285',
     productId: 'prod-7',
     productTitle: 'Coconut (Thengai) — Dozen (12 pcs)',
@@ -41,7 +54,7 @@ export const MOCK_PROCUREMENT: ProcurementRecord[] = [
     verifiedBy: 'Anbu Selvan'
   },
   {
-    id: 'PROC-904',
+    id: 'PROC-905',
     orderId: 'KD-10285',
     productId: 'prod-3',
     productTitle: 'Tomato (Thakkali) — 5 kg Box',
@@ -53,7 +66,20 @@ export const MOCK_PROCUREMENT: ProcurementRecord[] = [
     expectedDate: '18 Sep 2026'
   },
   {
-    id: 'PROC-905',
+    id: 'PROC-906',
+    orderId: 'KD-10285',
+    productId: 'prod-11',
+    productTitle: 'Curry Leaves (Karuveppilai) — 500 g Bundle',
+    supplier: 'Trichy Herb Garden Collective',
+    originCity: 'Trichy, Tamil Nadu',
+    inrCost: 60,
+    quantity: 4,
+    status: 'Ready',
+    expectedDate: '18 Sep 2026',
+    verifiedBy: 'Rajesh Kumar (QC Lead)'
+  },
+  {
+    id: 'PROC-907',
     orderId: 'KD-10286',
     productId: 'prod-13',
     productTitle: 'Basmati Rice — 25 kg Export Bag',
@@ -65,7 +91,19 @@ export const MOCK_PROCUREMENT: ProcurementRecord[] = [
     expectedDate: '20 Sep 2026'
   },
   {
-    id: 'PROC-906',
+    id: 'PROC-908',
+    orderId: 'KD-10286',
+    productId: 'prod-15',
+    productTitle: 'Garlic (Poondu) — 2 kg Net',
+    supplier: 'Erode Agri Direct Exports',
+    originCity: 'Erode, Tamil Nadu',
+    inrCost: 160,
+    quantity: 3,
+    status: 'Ordered',
+    expectedDate: '20 Sep 2026'
+  },
+  {
+    id: 'PROC-909',
     orderId: 'KD-10292',
     productId: 'prod-2',
     productTitle: 'Potato (Aloo) — 10 kg Bag',
@@ -77,7 +115,19 @@ export const MOCK_PROCUREMENT: ProcurementRecord[] = [
     expectedDate: '22 Sep 2026'
   },
   {
-    id: 'PROC-907',
+    id: 'PROC-910',
+    orderId: 'KD-10292',
+    productId: 'prod-3',
+    productTitle: 'Tomato (Thakkali) — 5 kg Box',
+    supplier: 'Madurai Vegetable Market Wholesaler',
+    originCity: 'Madurai, Tamil Nadu',
+    inrCost: 200,
+    quantity: 4,
+    status: 'Pending',
+    expectedDate: '22 Sep 2026'
+  },
+  {
+    id: 'PROC-911',
     orderId: 'KD-10292',
     productId: 'prod-4',
     productTitle: 'Green Chilli (Pacchai Milagai) — 2 kg Pack',
@@ -89,7 +139,7 @@ export const MOCK_PROCUREMENT: ProcurementRecord[] = [
     expectedDate: '22 Sep 2026'
   },
   {
-    id: 'PROC-908',
+    id: 'PROC-912',
     orderId: 'KD-10291',
     productId: 'prod-13',
     productTitle: 'Basmati Rice — 25 kg Export Bag',
@@ -99,5 +149,104 @@ export const MOCK_PROCUREMENT: ProcurementRecord[] = [
     quantity: 4,
     status: 'Pending',
     expectedDate: '23 Sep 2026'
+  },
+  {
+    id: 'PROC-913',
+    orderId: 'KD-10291',
+    productId: 'prod-15',
+    productTitle: 'Garlic (Poondu) — 2 kg Net',
+    supplier: 'Erode Agri Direct Exports',
+    originCity: 'Erode, Tamil Nadu',
+    inrCost: 160,
+    quantity: 2,
+    status: 'Pending',
+    expectedDate: '23 Sep 2026'
+  },
+  {
+    id: 'PROC-914',
+    orderId: 'KD-10293',
+    productId: 'prod-8',
+    productTitle: 'Guava (Koyya Pazham) — 3 kg Box',
+    supplier: 'Krishnagiri Orchard Exports',
+    originCity: 'Krishnagiri, Tamil Nadu',
+    inrCost: 150,
+    quantity: 3,
+    status: 'Ordered',
+    expectedDate: '23 Sep 2026'
+  },
+  {
+    id: 'PROC-915',
+    orderId: 'KD-10293',
+    productId: 'prod-9',
+    productTitle: 'Grapes (Thirachai) — 4 kg Box',
+    supplier: 'Theni Grape Farmers Association',
+    originCity: 'Theni, Tamil Nadu',
+    inrCost: 480,
+    quantity: 2,
+    status: 'Ordered',
+    expectedDate: '24 Sep 2026'
+  },
+  {
+    id: 'PROC-916',
+    orderId: 'KD-10296',
+    productId: 'prod-7',
+    productTitle: 'Coconut (Thengai) — Dozen (12 pcs)',
+    supplier: 'Thanjavur Coastal Coconut Growers',
+    originCity: 'Thanjavur, Tamil Nadu',
+    inrCost: 240,
+    quantity: 1,
+    status: 'Ready',
+    expectedDate: '19 Sep 2026',
+    verifiedBy: 'Anbu Selvan'
+  },
+  {
+    id: 'PROC-917',
+    orderId: 'KD-10296',
+    productId: 'prod-11',
+    productTitle: 'Curry Leaves (Karuveppilai) — 500 g Bundle',
+    supplier: 'Trichy Herb Garden Collective',
+    originCity: 'Trichy, Tamil Nadu',
+    inrCost: 60,
+    quantity: 2,
+    status: 'Ready',
+    expectedDate: '19 Sep 2026',
+    verifiedBy: 'Rajesh Kumar (QC Lead)'
+  },
+  {
+    id: 'PROC-918',
+    orderId: 'KD-10297',
+    productId: 'prod-14',
+    productTitle: 'Raw Rice (Pacharisi) — 25 kg Bag',
+    supplier: 'Chennai Rice Mill & Export Hub',
+    originCity: 'Chennai, Tamil Nadu',
+    inrCost: 1050,
+    quantity: 3,
+    status: 'Pending',
+    expectedDate: '24 Sep 2026'
+  },
+  {
+    id: 'PROC-919',
+    orderId: 'KD-10295',
+    productId: 'prod-1',
+    productTitle: 'Small Onion (Chinna Vengayam) — 5 kg Bag',
+    supplier: 'Perambalur Shallot Farmers Cooperative',
+    originCity: 'Perambalur, Tamil Nadu',
+    inrCost: 150,
+    quantity: 3,
+    status: 'Ready',
+    expectedDate: '20 Sep 2026',
+    verifiedBy: 'Rajesh Kumar (QC Lead)'
+  },
+  {
+    id: 'PROC-920',
+    orderId: 'KD-10301',
+    productId: 'prod-13',
+    productTitle: 'Basmati Rice — 25 kg Export Bag',
+    supplier: 'Chennai Rice Mill & Export Hub',
+    originCity: 'Chennai, Tamil Nadu',
+    inrCost: 1500,
+    quantity: 1,
+    status: 'Pending',
+    expectedDate: '25 Sep 2026'
   }
 ];

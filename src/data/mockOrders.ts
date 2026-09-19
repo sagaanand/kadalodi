@@ -77,7 +77,7 @@ export const ORDER_STAGE_ORDER: OrderStatus[] = [
   'delivered'
 ];
 
-export function buildTimeline(currentStage: OrderStatus, createdAtDate: string = '17 Sep 2026'): TimelineEntry[] {
+export function buildTimeline(currentStage: OrderStatus, _createdAtDate: string = '17 Sep 2026'): TimelineEntry[] {
   const currentIndex = ORDER_STAGE_ORDER.indexOf(currentStage);
 
   return ORDER_STAGES_CONFIG.map((config, index) => {
@@ -103,6 +103,7 @@ export function buildTimeline(currentStage: OrderStatus, createdAtDate: string =
 }
 
 export const MOCK_ORDERS: Order[] = [
+  // ── Ahmed Hassan's orders (customer demo user) ───────────────────────────────
   {
     id: 'KD-10284',
     customerName: 'Ahmed Hassan',
@@ -132,6 +133,117 @@ export const MOCK_ORDERS: Order[] = [
     paymentMethod: 'BML Online Gateway',
     weightKg: 32
   },
+  {
+    id: 'KD-10296',
+    customerName: 'Ahmed Hassan',
+    customerPhone: '+960 778-4321',
+    island: 'Hulhumalé',
+    address: 'Flat 4B, Lotus Tower, Nirolhu Magu, Phase 1',
+    items: [
+      { product: MOCK_PRODUCTS[6], quantity: 1 },
+      { product: MOCK_PRODUCTS[10], quantity: 2 },
+      { product: MOCK_PRODUCTS[11], quantity: 3 },
+    ],
+    subtotalMvr: 372,
+    shippingMvr: 155,
+    deliveryMvr: 50,
+    totalMvr: 577,
+    status: 'customs_clearance',
+    timeline: buildTimeline('customs_clearance'),
+    indiaWarehouse: 'Chennai Fulfillment Hub (Ambattur)',
+    shipmentId: 'KDL-EXP-023',
+    vesselName: 'Maersk Blue Atoll',
+    containerNo: 'MSKU-409182-2',
+    customsDecNo: 'MLE-CUS-2026-9850',
+    assignedDriver: 'Ali Moosa (Hulhumalé Express Van #3)',
+    eta: '21 Sep 2026',
+    createdAt: '14 Sep 2026, 09:45 AM',
+    paymentMethod: 'Credit Card (Visa)',
+    weightKg: 14
+  },
+  {
+    id: 'KD-10301',
+    customerName: 'Ahmed Hassan',
+    customerPhone: '+960 778-4321',
+    island: 'Hulhumalé',
+    address: 'Flat 4B, Lotus Tower, Nirolhu Magu, Phase 1',
+    items: [
+      { product: MOCK_PRODUCTS[12], quantity: 1 },
+      { product: MOCK_PRODUCTS[14], quantity: 2 },
+    ],
+    subtotalMvr: 920,
+    shippingMvr: 345,
+    deliveryMvr: 50,
+    totalMvr: 1315,
+    status: 'order_placed',
+    timeline: buildTimeline('order_placed'),
+    indiaWarehouse: 'Chennai Fulfillment Hub (Ambattur)',
+    shipmentId: 'KDL-EXP-025',
+    vesselName: 'OOCL Indian Ocean Flyer',
+    containerNo: 'Unassigned',
+    customsDecNo: 'Unassigned',
+    eta: '02 Oct 2026',
+    createdAt: '19 Sep 2026, 08:10 AM',
+    paymentMethod: 'BML Transfer',
+    weightKg: 29
+  },
+  {
+    id: 'KD-10258',
+    customerName: 'Ahmed Hassan',
+    customerPhone: '+960 778-4321',
+    island: 'Hulhumalé',
+    address: 'Flat 4B, Lotus Tower, Nirolhu Magu, Phase 1',
+    items: [
+      { product: MOCK_PRODUCTS[2], quantity: 2 },
+      { product: MOCK_PRODUCTS[3], quantity: 3 },
+      { product: MOCK_PRODUCTS[5], quantity: 2 },
+    ],
+    subtotalMvr: 466,
+    shippingMvr: 162,
+    deliveryMvr: 50,
+    totalMvr: 678,
+    status: 'delivered',
+    timeline: buildTimeline('delivered'),
+    indiaWarehouse: 'Chennai Fulfillment Hub (Ambattur)',
+    shipmentId: 'KDL-EXP-021',
+    vesselName: 'MV Maldivian Express',
+    containerNo: 'TGHU-881902-7',
+    customsDecNo: 'MLE-CUS-2026-9520',
+    assignedDriver: 'Ali Moosa (Hulhumalé Express Van #3)',
+    eta: '10 Sep 2026',
+    createdAt: '04 Sep 2026, 02:15 PM',
+    paymentMethod: 'BML Online Gateway',
+    weightKg: 14
+  },
+  {
+    id: 'KD-10241',
+    customerName: 'Ahmed Hassan',
+    customerPhone: '+960 778-4321',
+    island: 'Hulhumalé',
+    address: 'Flat 4B, Lotus Tower, Nirolhu Magu, Phase 1',
+    items: [
+      { product: MOCK_PRODUCTS[7], quantity: 2 },
+      { product: MOCK_PRODUCTS[8], quantity: 1 },
+    ],
+    subtotalMvr: 495,
+    shippingMvr: 148,
+    deliveryMvr: 50,
+    totalMvr: 693,
+    status: 'delivered',
+    timeline: buildTimeline('delivered'),
+    indiaWarehouse: 'Chennai Fulfillment Hub (Ambattur)',
+    shipmentId: 'KDL-EXP-020',
+    vesselName: 'CMA CGM Dhivehi Pearl',
+    containerNo: 'CMAU-881203-1',
+    customsDecNo: 'MLE-CUS-2026-9412',
+    assignedDriver: 'Ali Moosa',
+    eta: '28 Aug 2026',
+    createdAt: '22 Aug 2026, 10:00 AM',
+    paymentMethod: 'Credit Card',
+    weightKg: 19
+  },
+
+  // ── Other customers ───────────────────────────────────────────────────────────
   {
     id: 'KD-10285',
     customerName: 'Mariyam Shifa',
@@ -405,6 +517,60 @@ export const MOCK_ORDERS: Order[] = [
     weightKg: 58
   },
   {
+    id: 'KD-10295',
+    customerName: 'Rugiyya Naeem',
+    customerPhone: '+960 766-8844',
+    island: 'Malé',
+    address: 'Galolhu, Fushee Magu, Sunrise Block',
+    items: [
+      { product: MOCK_PRODUCTS[0], quantity: 3 },
+      { product: MOCK_PRODUCTS[4], quantity: 2 },
+      { product: MOCK_PRODUCTS[11], quantity: 2 },
+    ],
+    subtotalMvr: 482,
+    shippingMvr: 198,
+    deliveryMvr: 50,
+    totalMvr: 730,
+    status: 'export_cleared',
+    timeline: buildTimeline('export_cleared'),
+    indiaWarehouse: 'Cochin Fulfillment Hub (INCOK)',
+    shipmentId: 'KDL-EXP-025',
+    vesselName: 'OOCL Indian Ocean Flyer',
+    containerNo: 'OOCU-772901-2',
+    customsDecNo: 'MLE-CUS-2026-9940',
+    assignedDriver: 'Ahmed Naeem',
+    eta: '28 Sep 2026',
+    createdAt: '17 Sep 2026, 04:00 PM',
+    paymentMethod: 'BML Online Gateway',
+    weightKg: 19
+  },
+  {
+    id: 'KD-10297',
+    customerName: 'Ali Rasheed',
+    customerPhone: '+960 772-3311',
+    island: 'Addu City',
+    address: 'Maradhoo, Isthiyaanee Magu, Rose Villa',
+    items: [
+      { product: MOCK_PRODUCTS[13], quantity: 3 },
+      { product: MOCK_PRODUCTS[15], quantity: 3 },
+    ],
+    subtotalMvr: 1428,
+    shippingMvr: 410,
+    deliveryMvr: 100,
+    totalMvr: 1938,
+    status: 'procurement',
+    timeline: buildTimeline('procurement'),
+    indiaWarehouse: 'Chennai Fulfillment Hub (Ambattur)',
+    shipmentId: 'KDL-EXP-025',
+    vesselName: 'OOCL Indian Ocean Flyer',
+    containerNo: 'OOCU-772901-2',
+    customsDecNo: 'Pending Filing',
+    eta: '01 Oct 2026',
+    createdAt: '18 Sep 2026, 03:00 PM',
+    paymentMethod: 'BML Transfer',
+    weightKg: 81
+  },
+  {
     id: 'KD-10280',
     customerName: 'Hawwa Sana',
     customerPhone: '+960 790-1234',
@@ -501,4 +667,3 @@ export const MOCK_ORDERS: Order[] = [
     weightKg: 25
   }
 ];
-
