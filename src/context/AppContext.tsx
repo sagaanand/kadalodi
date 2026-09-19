@@ -77,7 +77,7 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const LOCAL_STORAGE_KEY = 'kadalodi_state_v2';
+const LOCAL_STORAGE_KEY = 'kadalodi_state_v3';
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Load persisted state or initial mocks
