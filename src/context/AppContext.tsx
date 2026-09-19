@@ -79,6 +79,15 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 const LOCAL_STORAGE_KEY = 'kadalodi_state_v3';
 
+// Purge any stale keys from older versions so fresh mock data always loads
+const STALE_KEYS = ['kadalodi_state_v1', 'kadalodi_state_v2'];
+STALE_KEYS.forEach(old => {
+  ['_loggedin','_role','_products','_orders','_shipments','_procurement',
+   '_customs','_deliveries','_sourcing','_notifications','_cart'].forEach(suffix => {
+    localStorage.removeItem(`${old}${suffix}`);
+  });
+});
+
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Load persisted state or initial mocks
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(() => {
@@ -95,39 +104,35 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return saved ? JSON.parse(saved) : MOCK_PRODUCTS;
   });
 
+  // Orders, procurement, customs, deliveries, sourcing & notifications are
+  // NEVER loaded from localStorage — always from fresh mock data.
+  // This guarantees demo content is always visible regardless of browser cache.
   const [orders, setOrders] = useState<Order[]>(() => {
-    const saved = localStorage.getItem(`${LOCAL_STORAGE_KEY}_orders`);
-    return saved ? JSON.parse(saved) : MOCK_ORDERS;
+    return MOCK_ORDERS;
   });
 
   const [shipments, setShipments] = useState<Shipment[]>(() => {
-    const saved = localStorage.getItem(`${LOCAL_STORAGE_KEY}_shipments`);
-    return saved ? JSON.parse(saved) : MOCK_SHIPMENTS;
+    return MOCK_SHIPMENTS;
   });
 
   const [procurement, setProcurement] = useState<ProcurementRecord[]>(() => {
-    const saved = localStorage.getItem(`${LOCAL_STORAGE_KEY}_procurement`);
-    return saved ? JSON.parse(saved) : MOCK_PROCUREMENT;
+    return MOCK_PROCUREMENT;
   });
 
   const [customs, setCustoms] = useState<CustomsDeclaration[]>(() => {
-    const saved = localStorage.getItem(`${LOCAL_STORAGE_KEY}_customs`);
-    return saved ? JSON.parse(saved) : MOCK_CUSTOMS;
+    return MOCK_CUSTOMS;
   });
 
   const [deliveries, setDeliveries] = useState<DeliveryAssignment[]>(() => {
-    const saved = localStorage.getItem(`${LOCAL_STORAGE_KEY}_deliveries`);
-    return saved ? JSON.parse(saved) : MOCK_DELIVERIES;
+    return MOCK_DELIVERIES;
   });
 
   const [sourcingRequests, setSourcingRequests] = useState<SourcingQuoteRequest[]>(() => {
-    const saved = localStorage.getItem(`${LOCAL_STORAGE_KEY}_sourcing`);
-    return saved ? JSON.parse(saved) : MOCK_SOURCING_REQUESTS;
+    return MOCK_SOURCING_REQUESTS;
   });
 
   const [notifications, setNotifications] = useState<NotificationItem[]>(() => {
-    const saved = localStorage.getItem(`${LOCAL_STORAGE_KEY}_notifications`);
-    return saved ? JSON.parse(saved) : MOCK_NOTIFICATIONS;
+    return MOCK_NOTIFICATIONS;
   });
 
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -142,20 +147,13 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
   const [isWhatsAppModalOpen, setIsWhatsAppModalOpen] = useState(false);
 
-  // Sync to local storage
+  // Sync only session + cart to localStorage — demo data always reloads fresh from mocks
   useEffect(() => {
     localStorage.setItem(`${LOCAL_STORAGE_KEY}_loggedin`, String(isLoggedIn));
     localStorage.setItem(`${LOCAL_STORAGE_KEY}_role`, role);
     localStorage.setItem(`${LOCAL_STORAGE_KEY}_products`, JSON.stringify(products));
-    localStorage.setItem(`${LOCAL_STORAGE_KEY}_orders`, JSON.stringify(orders));
-    localStorage.setItem(`${LOCAL_STORAGE_KEY}_shipments`, JSON.stringify(shipments));
-    localStorage.setItem(`${LOCAL_STORAGE_KEY}_procurement`, JSON.stringify(procurement));
-    localStorage.setItem(`${LOCAL_STORAGE_KEY}_customs`, JSON.stringify(customs));
-    localStorage.setItem(`${LOCAL_STORAGE_KEY}_deliveries`, JSON.stringify(deliveries));
-    localStorage.setItem(`${LOCAL_STORAGE_KEY}_sourcing`, JSON.stringify(sourcingRequests));
-    localStorage.setItem(`${LOCAL_STORAGE_KEY}_notifications`, JSON.stringify(notifications));
     localStorage.setItem(`${LOCAL_STORAGE_KEY}_cart`, JSON.stringify(cart));
-  }, [isLoggedIn, role, products, orders, shipments, procurement, customs, deliveries, sourcingRequests, notifications, cart]);
+  }, [isLoggedIn, role, products, cart]);
 
   // Cart calculations
   const cartTotals: CartTotals = React.useMemo(() => {
