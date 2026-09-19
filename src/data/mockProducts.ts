@@ -16,7 +16,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 5,
     rating: 4.8,
     reviewsCount: 214,
-    image: '🧅',
+    image: 'https://images.unsplash.com/photo-1582515073490-39981397c445?w=600&auto=format&fit=crop&q=80',
     description:
       'Premium small onions (shallots) sourced directly from Perambalur, Tamil Nadu — the shallot capital of India. Sweet, pungent, and perfect for Maldivian curries, rihaakuru sauces, and daily cooking. Sorted, cleaned, and packed in breathable mesh bags for maximum freshness during sea transit.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -42,7 +42,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 10,
     rating: 4.6,
     reviewsCount: 178,
-    image: '🥔',
+    image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=600&auto=format&fit=crop&q=80',
     description:
       'Fresh market-grade potatoes from Ooty & Nilgiris highlands, packed at peak condition for export. A daily-use staple in Maldivian households — ideal for mas huni, fried dishes, and curries. Cool-stored pre-shipment for extended freshness.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -68,7 +68,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 5,
     rating: 4.5,
     reviewsCount: 142,
-    image: '🍅',
+    image: 'https://images.unsplash.com/photo-1558818498-28c1e002b655?w=600&auto=format&fit=crop&q=80',
     description:
       'Firm, ripe hybrid tomatoes from the Madurai & Dindigul growing belt — harvested at 80% maturity for optimal shelf life during sea shipment. Deep red colour, balanced acidity, and thick flesh make these perfect for Maldivian fish curries, salads, and sambols.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -94,7 +94,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 2,
     rating: 4.7,
     reviewsCount: 196,
-    image: '🌶️',
+    image: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=600&auto=format&fit=crop&q=80',
     description:
       'Fiery, fragrant green chillies from Guntur-variety farms in Tamil Nadu — a backbone ingredient in Maldivian cuisine. Used in mas riha (tuna curry), sambol pastes, and pickles. Bright green, medium heat (SHU 30,000–50,000), packed in ventilated punnets to prevent sweating.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -120,7 +120,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 5,
     rating: 4.4,
     reviewsCount: 89,
-    image: '🥒',
+    image: 'https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?w=600&auto=format&fit=crop&q=80',
     description:
       'Crisp, dark green cucumbers grown in Coimbatore region — popular for Maldivian salads, raita, and raw garnishes. Uniform size, thin skin, and low seed count. Wax-free and naturally grown for a clean flavour profile.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -146,7 +146,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 2,
     rating: 4.6,
     reviewsCount: 73,
-    image: '🌿',
+    image: 'https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?w=600&auto=format&fit=crop&q=80',
     description:
       'Fresh moringa drumsticks from Trichy farms — tender, green, and fragrant. A beloved ingredient in South Indian-style Maldivian curries and soups. Rich in vitamins A, C, and iron. Bundled in sets of 6–8 sticks per pack.',
     brand: 'Kadalodi Fresh — Trichy',
@@ -174,7 +174,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 8,
     rating: 4.9,
     reviewsCount: 301,
-    image: '🥥',
+    image: 'https://images.unsplash.com/photo-1524492412937-b28074a47d70?w=600&auto=format&fit=crop&q=80',
     description:
       'Fresh mature coconuts from Thanjavur\'s coastal groves — the gold standard for Maldivian cooking. Used in coconut milk, pol sambol, and sweetmeats. Heavy, water-rich, and naturally husked for easy cracking. Each batch freshness-tested before loading.',
     brand: 'Kadalodi Fresh — Thanjavur',
@@ -200,7 +200,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 3,
     rating: 4.5,
     reviewsCount: 112,
-    image: '🍈',
+    image: 'https://images.unsplash.com/photo-1619546952812-520e98064a52?w=600&auto=format&fit=crop&q=80',
     description:
       'Sweet, white-fleshed Allahabad Safeda guavas from Tamil Nadu orchards. Naturally aromatic with a honey-like sweetness. Popular as a fresh snack and juice fruit in Maldivian resorts and homes. Harvested pre-ripe for perfect arrival condition.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -226,7 +226,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 4,
     rating: 4.7,
     reviewsCount: 156,
-    image: '🍇',
+    image: 'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=600&auto=format&fit=crop&q=80',
     description:
       'Premium Sharad Seedless green grapes from Nashik-adjacent Tamil Nadu farms — crisp, juicy, and naturally sweet. A top-selling fruit in Maldivian resorts and premium households. Cold-chain handled from harvest to port loading.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -254,7 +254,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 1,
     rating: 4.8,
     reviewsCount: 267,
-    image: '🌿',
+    image: 'https://images.unsplash.com/photo-1506807803488-8eafc15316c9?w=600&auto=format&fit=crop&q=80',
     description:
       'Fresh, bushy coriander (cilantro) bundles from Tiruvallur farms — intensely fragrant, vibrant green, and full-leafed. The most-used garnish herb in Maldivian fish dishes, soups, and biriyani. Harvested the same day as port loading to maximise freshness on arrival.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -280,7 +280,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 0.5,
     rating: 4.9,
     reviewsCount: 341,
-    image: '🍃',
+    image: 'https://images.unsplash.com/photo-1586093728487-7c35a7a27d28?w=600&auto=format&fit=crop&q=80',
     description:
       'Aromatic fresh curry leaf branches from home-grown trees in Trichy district. The soul of Maldivian seafood curries — impossible to substitute. Firm, dark-green leaves that release intense flavour when tempered in oil. Bundles of 8–10 branches, packed in perforated bags.',
     brand: 'Kadalodi Fresh — Trichy',
@@ -306,7 +306,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 0.5,
     rating: 4.7,
     reviewsCount: 198,
-    image: '🌱',
+    image: 'https://images.unsplash.com/photo-1618164436241-4473940d1f5c?w=600&auto=format&fit=crop&q=80',
     description:
       'Fresh spearmint (pudina) bundles from Madurai farms — cool, intense, and fragrant. Used in Maldivian salads, raita, mint tea, and garnishes. Hydroponic-style grown for maximum leaf density. Packed standing upright in water-soaked cotton base for freshness.',
     brand: 'Kadalodi Fresh — Madurai',
@@ -334,7 +334,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 25,
     rating: 4.8,
     reviewsCount: 189,
-    image: '🌾',
+    image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&auto=format&fit=crop&q=80',
     description:
       'Premium aged Basmati rice (1121 variety) from Punjab-origin mills, cleaned and packed at our Chennai warehouse. Long-grain, aromatic, and non-sticky — ideal for Maldivian biriyani, rice dishes, and resorts. FSSAI certified, moisture content <13%, uniform grain size.',
     brand: 'Kadalodi Staples',
@@ -360,7 +360,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 25,
     rating: 4.6,
     reviewsCount: 143,
-    image: '🌾',
+    image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&auto=format&fit=crop&q=80',
     description:
       'High-quality raw (white) rice packed at Chennai for bulk export to Maldives. The everyday staple for households, guesthouses, and local restaurants across the atolls. Sorted, cleaned, and double-bagged for sea transit resilience.',
     brand: 'Kadalodi Staples',
@@ -388,7 +388,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 2,
     rating: 4.7,
     reviewsCount: 224,
-    image: '🧄',
+    image: 'https://images.unsplash.com/photo-1595475207225-428b62bda831?w=600&auto=format&fit=crop&q=80',
     description:
       'Dry, pungent Indian garlic — large-clove variety from Rajasthan farms processed through Chennai. Essential for Maldivian fish curry pastes, soups, and marinades. Clean white skin, firm bulbs, and high allicin content for maximum flavour.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
@@ -414,7 +414,7 @@ export const MOCK_PRODUCTS: Product[] = [
     weightKg: 2,
     rating: 4.6,
     reviewsCount: 167,
-    image: '🫚',
+    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&auto=format&fit=crop&q=80',
     description:
       'Fresh-dried ginger rhizomes from Kerala-origin farms, processed in Tamil Nadu. Aromatic, fibrous, and pungent — a key base for Maldivian curry pastes, tea, and medicinal use. Skin-on, thoroughly cleaned, and moisture-controlled for long shelf life.',
     brand: 'Kadalodi Fresh — Tamil Nadu',
